@@ -1,0 +1,39 @@
+.first_container{
+    background-color:blue;
+}
+
+.first_one_container{
+    background-color:red;
+}
+
+.first_two_container{
+    background-color:rebeccapurple;
+}
+
+.first_three_container{
+    background-color:yellow;
+}
+
+.second_container{
+    background-color:red;
+}
+
+.second_one_container{
+    background-color:blue;
+}
+
+.second_two_container{
+    background-color:yellow;
+}
+
+.second_three_container{
+    background-color:rebeccapurple;
+}
+
+.third_container{
+    background-color:yellow;
+}
+
+.third_one_container{
+    text-align: center;
+}
