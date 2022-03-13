@@ -1,2 +1,2 @@
-Kartografya ödevi için => [Web Site] (ErdemGns.github.io)
+Kartografya ödevi için => [Web Site] (https://erdemgns.github.io/)
 
