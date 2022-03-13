@@ -1,12 +1,12 @@
 body {
-    background-color: rgb(109, 121, 96);
+    background-color: rgb(134, 223, 40);
 }
 
 .first_container {
-    margin: 5px 10px 10px 10px;
+    margin: 5px 10px 5px 10px;
     width: 10px;
-    border: 7px solid red;
-    padding: 15px;
+    border: 3px solid red;
+    padding: 13px;
     background-color: blue;
     width: 80%;
     height: auto;
@@ -18,10 +18,10 @@ body {
 .third_container {
     margin: 5px 70px 50px 90px;
     width: 300px;
-    border: 7px solid green;
+    border: 5px solid green;
     padding: 325px;
     text-align: center;
-    background-color: yellow;
+    background-color: white;
     width: 50%;
     height: auto;
     margin-right: auto;
