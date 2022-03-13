@@ -1,7 +1,6 @@
-body{
+body {
     background-color: rgb(109, 121, 96);
 }
-
 
 .first_container {
     margin: 5px 10px 10px 10px;
@@ -16,8 +15,21 @@ body{
     color: yellow;
 }
 
-
 .third_container {
+    margin: 5px 70px 50px 90px;
+    width: 300px;
+    border: 7px solid green;
+    padding: 325px;
+    text-align: center;
+    background-color: yellow;
+    width: 50%;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    color: #066;
+}
+
+script{
     margin: 5px 70px 50px 90px;
     width: 300px;
     border: 7px solid green;
@@ -42,7 +54,6 @@ body{
   color: #066;
 }
 */
-
 
 /*
 .first_one_container {
@@ -93,5 +104,3 @@ body{
     background-color:rebeccapurple;
 }
 */
-
-

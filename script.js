@@ -27,7 +27,10 @@
         - 
 */
 
+document.write("OpenStretMap");
+//alert("Helloo Mada Faka!!!");
 
+/*
 map = new OpenLayers.Map("mapdiv");
 map.addLayer(new OpenLayers.Layer.OSM());
 
@@ -49,4 +52,4 @@ map.addLayer(markers);
 markers.addMarker(new OpenLayers.Marker(lonLat));
 
 map.setCenter (lonLat, zoom);
-
+*/
