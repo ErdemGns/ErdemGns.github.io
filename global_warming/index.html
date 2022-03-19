@@ -9,9 +9,15 @@
   <!-- chart.js kütüphanesi -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
 
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="ErdemGns.github.io\img\favicon\favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
+  <h1 style="text-align: center; background-color: yellow; color: red;">Küresel ısınma tamamen uydurmadır(!), her ne
+    kadar aşağıdaki veriler gerçek olsada.</h1>
+  <hr>
 
   <canvas id="chart" width="80%" height="25%"></canvas>
 
@@ -40,7 +46,7 @@
           scales: {
             y: {
               ticks: {
-                callback: function(value, index, ticks) {
+                callback: function (value, index, ticks) {
                   return value + '°';
                 }
               }
