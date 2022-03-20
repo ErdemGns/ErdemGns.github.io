@@ -18,18 +18,17 @@
   </style>
 
   <title>Airplane</title>
-
   <link rel="shortcut icon" href="airplane.png" type="image/x-icon">
 
 </head>
 
 <body>
 
-  <h1>Uçak Haraket Haritası Yapılıyor...</h1>
+  <h1>Uçak Hareket Haritası Yapılıyor...</h1>
 
-  <p>Enlem: <span id="lat"></span>°<br />
+  <!-- <p>Enlem: <span id="lat"></span>°<br />
     Boylam: <span id="lon"></span>°<br />
-    Hız: <span id="vel"></span> km/h</p>
+    Hız: <span id="vel"></span> km/h</p> -->
 
   <div id="issMap"></div>
 
@@ -57,7 +56,12 @@
     }).addTo(mymap);
 
 
-    const api_url = 'https://api.wheretheiss.at/v1/satellites/25544'
+    const api_url = 'https://opensky-network.org/api/states/all?lamin=35.8389&lomin=25&lamax=45&lomax=45';
+
+
+    //const api_url = 'https://api.wheretheiss.at/v1/satellites/25544'
+
+    //let data = fetch("https://opensky-network.org/api/states/all?lamin=35.8389&lomin=25&lamax=45&lomax=45").then(response => response.json()).then(veri => console.log(veri));
 
     let firstTime = true;
 
@@ -67,7 +71,6 @@
       const {
         latitude,
         longitude,
-        velocity
       } = data;
 
       marker.setLatLng([latitude, longitude]);
@@ -75,16 +78,15 @@
         mymap.setView([latitude, longitude], 2);
         firstTime = false;
       }
-      document.getElementById('lat').textContent = latitude.toFixed(4);
-      document.getElementById('lon').textContent = longitude.toFixed(4);
-      //Hız
-      document.getElementById('vel').textContent = velocity.toFixed(4);
+      //document.getElementById('lat').textContent = latitude.toFixed(4);
+      //document.getElementById('lon').textContent = longitude.toFixed(4);
+
     }
 
 
     getISS();
 
-    setInterval(getISS, 1000);
+    setInterval(getISS, 5000);
   </script>
 </body>
 
