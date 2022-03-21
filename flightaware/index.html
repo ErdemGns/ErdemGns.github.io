@@ -11,7 +11,7 @@
     integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
     crossorigin=""></script>
   <style>
-    #issMap {
+    #airplaneMap {
       width: 65%;
       height: 700px;
     }
@@ -24,17 +24,17 @@
 
 <body>
 
-  <h1>Uçak Hareket Haritası Yapılıyor...</h1>
+  <h1>Uçak Hareket Haritası</h1>
 
   <!-- <p>Enlem: <span id="lat"></span>°<br />
     Boylam: <span id="lon"></span>°<br />
     Hız: <span id="vel"></span> km/h</p> -->
 
-  <div id="issMap"></div>
+  <div id="airplaneMap"></div>
 
   <script>
     //Making a map and tiles
-    const mymap = L.map('issMap').setView([0, 0], 1);
+    const mymap = L.map('airplaneMap').setView([40, 35], 5);
 
     const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributonrs';
 
@@ -44,16 +44,7 @@
     });
     tiles.addTo(mymap);
 
-    //Making a marker with a custom icon
-    const issIcon = L.icon({
-      iconUrl: 'airplane.png',
-      iconSize: [25, 25],
-      iconAnchor: [25, 16],
-    });
 
-    const marker = L.marker([0, 0], {
-      icon: issIcon
-    }).addTo(mymap);
 
 
     const api_url = 'https://opensky-network.org/api/states/all?lamin=35.8389&lomin=25&lamax=45&lomax=45';
@@ -65,28 +56,84 @@
 
     let firstTime = true;
 
-    async function getISS() {
+    async function getAirplane() {
       const response = await fetch(api_url);
+      //Kontrol
+      //console.log("V: ", response);
       const data = await response.json();
-      const {
-        latitude,
-        longitude,
-      } = data;
+      //Çekilen verileri göster
+      //console.log("Veri: ", data);
 
-      marker.setLatLng([latitude, longitude]);
-      if (firstTime) {
-        mymap.setView([latitude, longitude], 2);
-        firstTime = false;
+      //TEST
+      for (let i = 0; i < data.states.length; i++) {
+        let long = data.states[i][5];
+        let lat = data.states[i][6];
+        //console.log("Long: ", long, "Lat: ", lat);
+        //let country = data.states[i][2];
+        //let fly_code = data.states[i][1];
+
+        //Making a marker with a custom icon
+        const airplaneIcon = L.icon({
+          iconUrl: 'airplane.png',
+          iconSize: [19, 19],
+          //iconAnchor: [25, 16],
+        });
+
+        //'long', 'lat'
+        const marker = L.marker([long, lat], {
+          icon: airplaneIcon
+        }).addTo(mymap);
+
+        marker.setLatLng([long, lat]);
+
       }
+
+
+      //Making a marker with a custom icon
+      /*const issIcon = L.icon({
+        iconUrl: 'airplane.png',
+        iconSize: [25, 25],
+        iconAnchor: [25, 16],
+      });
+
+      //'long', 'lat'
+      const marker = L.marker([0, 0]).addTo(mymap);
+
+      marker.setLatLng([long, lat]);*/
+
+      //marker.setLatLng([lat, long]);
+      //console.log("Data: ", data);
+
+      //Hangi verilerin çekileceğini ayarla
+      //const { lat, long } = data;
+      //Konsol çıktısı
+      //console.log("Data: ", data);
+
+      //marker.setLatLng([lat, long]);
+      /*if (firstTime) {
+        mymap.setView([lat, long], 2);
+        firstTime = false;
+      }*/
+
+
+      //col_name = ['icao24','callsign','origin_country','time_position','last_contact','long','lat','baro_altitude','on_ground','velocity','true_track','vertical_rate','sensors','geo_altitude','squawk','spi','position_source']
+      //flight_df = pd.DataFrame(response['states'])
+      //flight_df = flight_df.loc[:,0:16]
+      //flight_df.columns = col_name
+
+
+
       //document.getElementById('lat').textContent = latitude.toFixed(4);
       //document.getElementById('lon').textContent = longitude.toFixed(4);
+      //Hız
+      //document.getElementById('vel').textContent = velocity.toFixed(4);
 
     }
 
 
-    getISS();
+    getAirplane();
 
-    setInterval(getISS, 5000);
+    setInterval(getAirplane, 1000);
   </script>
 </body>
 
