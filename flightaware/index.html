@@ -72,8 +72,8 @@
           } else {
             const airplaneIcon = L.icon({
               iconUrl: 'airplane.png',
-              iconSize: [17, 17],
-              //iconAnchor: [25, 16],
+              iconSize: [13],
+              //Uçakların gidiş yönü açı => true_track
             });
             markers[icao24] = L.marker([lat, lng], {
               icon: airplaneIcon,
