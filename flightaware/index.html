@@ -72,13 +72,15 @@
           } else {
             const airplaneIcon = L.icon({
               iconUrl: 'airplane.png',
-              iconSize: [13],
-              //Uçakların gidiş yönü açı => true_track
+              iconSize: [17],
             });
             markers[icao24] = L.marker([lat, lng], {
               icon: airplaneIcon,
+              //Uçakların gidiş yönü angle => true_track
+              //transform: rotate(true_track),
+              //rotate: [true_track]
             }).bindPopup(`<p> Ülke: ${origin_country} <br> Enlem: ${lat} <br> Boylam: ${lng} </p>`);
-
+            
             markers[icao24].addTo(map);
           }
         });
