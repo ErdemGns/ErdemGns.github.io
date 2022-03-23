@@ -14,7 +14,7 @@
     }
 
     #map {
-      width: 75%;
+      width: 65%;
       height: 50%;
     }
   </style>
@@ -77,7 +77,7 @@
             markers[icao24].addTo(map);
           }
         });
-        setTimeout(() => plotStates(map, markers), 1000);
+        setTimeout(() => plotStates(map, markers), 5000);
       });
     }
 
