@@ -62,9 +62,10 @@
         states.forEach((state) => {
           const lat = state[6],
             lng = state[5],
+            icao24 = state[0],
             callsign = state[1],
             origin_country = state[2],
-            icao24 = state[0];
+            true_track = state[10];
 
           if (markers[icao24]) {
             markers[icao24].setLatLng([lat, lng]);
