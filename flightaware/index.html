@@ -30,7 +30,7 @@
 
   <script>
     //Making a map and tiles
-    const map = L.map('map').setView([40, 35], 5);
+    const map = L.map('map').setView([40, 35], 6);
     const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributonrs';
     const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     const tiles = L.tileLayer(tileUrl, {
@@ -80,7 +80,7 @@
               //transform: rotate(true_track),
               //rotate: [true_track]
             }).bindPopup(`<p> Ülke: ${origin_country} <br> Enlem: ${lat} <br> Boylam: ${lng} </p>`);
-            
+
             markers[icao24].addTo(map);
           }
         });
