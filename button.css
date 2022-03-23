@@ -1,5 +1,24 @@
+/*.first_one_button {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-decoration: none;
+  color: yellow;
+  font-size: 15px;
+  float: left;
+  margin-left: 200px;
+  transition: all ease 0.5s;
+  margin-right: -200px;
+  overflow: hidden;
+  width: 150px;
+  text-align: center;
+}
+.first_one_button a:hover {
+  background: orange;
+  color: rgb(0, 0, 0);
+}*/
+
 .first_one_button {
-  background-color: yellow; /* Green */
+  background-color: yellow; 
   border: none;
   color: white;
   padding: 15px 32px;
@@ -11,39 +30,39 @@
 }
 
 .first_two_button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #4caf50;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .first_three_button {
-    display: inline-block;
-    padding: 15px 25px;
-    font-size: 24px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    color: #fff;
-    background-color: #4caf50;
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0 9px #999;
-    background-color: #3e8e41;
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .first_four_button {
@@ -82,7 +101,6 @@
   transform: translateY(4px);
 }
 
-
 .first_six_button {
   display: inline-block;
   padding: 15px 25px;
@@ -100,7 +118,6 @@
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
-
 
 .first_seven_button {
   display: inline-block;
