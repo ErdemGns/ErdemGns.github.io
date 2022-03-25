@@ -18,8 +18,8 @@
     }
 
     #map {
-      width: 85%;
-      height: 700px;
+      width: 50%;
+      height: 500px;
     }
   </style>
 
@@ -34,14 +34,14 @@
 
   <script>
     //Making a map and tiles
-    const map = L.map('map').setView([40, 35], 6);
+    const map = L.map('map').setView([0, 0], 1);
     const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributonrs';
     const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     const tiles = L.tileLayer(tileUrl, {
       attribution
     });
     tiles.addTo(map);
-    const api_url = 'https://opensky-network.org/api/states/all?lamin=35.8389&lomin=25&lamax=45&lomax=45';
+    const api_url = 'https://opensky-network.org/api/states/all';
 
     //////////////////////////////////////////
 
@@ -84,8 +84,10 @@
             //img.style.transform ="rotate("+true_track+"deg)";
             //img.className = true_track;
 
-            markers[icao24] = L.marker([lat, lng], {
-              icon: airplaneIcon
+            markers[icao24] = L.circleMarker([lat, lng], {
+              icon: airplaneIcon,
+              radius: 2,
+              color: 'red'
               //Uçakların gidiş yönü angle => true_track
               //transform: rotate(true_track),
               //rotate: [true_track]
