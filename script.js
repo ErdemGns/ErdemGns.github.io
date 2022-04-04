@@ -26,7 +26,7 @@ const map = L.map('map').setView([39.031, 35.252], 6);
 L.tileLayer('https://api.maptiler.com/maps/openstreetmap/{z}/{x}/{y}.jpg?key=oop72p6o0U8XFLHsWmCt', {
     attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank">&copy; MapTiler</a> <a href="https://www.openstreetmap.org/copyright" target="_blank">&copy; OpenStreetMap contributors</a>',
 }).addTo(map);
-const marker = L.marker([39.92077, 32.85411]).addTo(map).bindPopup(`<p>ANKARA</p>`).openPopup();
+const marker = L.marker([39.92077, 32.85411]).addTo(map).bindPopup(`ANKARA`).openPopup();
 
 
 
