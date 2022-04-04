@@ -20,12 +20,6 @@
         harita altlığı üzerinden yerlerin konummunu göster.
 */
 
-/*
-    Gösterilecek konum örnekler:
-        - Dünya ülke başkent konum veriler
-        - Türkiye şehir merkezleri konum verileri
-        - 
-*/
 
 var map = L.map('map').setView([39.031, 35.252], 6);
 

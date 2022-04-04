@@ -1,22 +1,3 @@
-/*.first_one_button {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-decoration: none;
-  color: yellow;
-  font-size: 15px;
-  float: left;
-  margin-left: 200px;
-  transition: all ease 0.5s;
-  margin-right: -200px;
-  overflow: hidden;
-  width: 150px;
-  text-align: center;
-}
-.first_one_button a:hover {
-  background: orange;
-  color: rgb(0, 0, 0);
-}*/
-
 .first_one_button {
   background-color: yellow; 
   border: none;
