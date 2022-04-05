@@ -1,35 +1,14 @@
 .first_one_button {
-  background-color: red; 
-  border: none;
-  color: white;
+  background-color: red;
   padding: 15px;
-  font-size: 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
 }
 
 .first_two_button {
-  background-color: green; 
-  border: none;
-  color: white;
+  background-color: red;
   padding: 15px;
-  font-size: 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
 }
 
 .first_three_button {
-  background-color: yellow; 
-  border: none;
-  color: white;
+  background-color: red;
   padding: 15px;
-  font-size: 24px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
 }
