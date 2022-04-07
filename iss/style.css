@@ -2,3 +2,13 @@
     width: 65%;
     height: 700px;
 }
+
+#up_part {
+    color: yellow;
+    width: 100%;
+    height: auto;
+    background-color: black;
+    border: 100%;
+    border-color: black;
+    margin: 0;
+}

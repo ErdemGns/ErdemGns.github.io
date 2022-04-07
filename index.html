@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Leaflet kütüphanesini çağırma işlemi -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-      crossorigin=""
-    />
-    <script
-      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-      crossorigin=""
-    ></script>
 
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Çalışınca Oluyor</title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
-  </head>
+<head>
+  <!-- Leaflet kütüphanesini çağırma işlemi -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
 
-  <!-- CSS container kodlarını çağır -->
-  <link rel="stylesheet" href="styles.css" />
-  <!-- CSS button kodlarını çağır -->
-  <link rel="stylesheet" href="button.css" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Çalışınca Oluyor</title>
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+</head>
 
-  <body>
-    <h1 style="text-align: center; color: black">Çalışınca oluyor.</h1>
+<!-- CSS container kodlarını çağır -->
+<link rel="stylesheet" href="styles.css" />
+<!-- CSS button kodlarını çağır -->
+<link rel="stylesheet" href="button.css" />
 
-    <div class="first_container">
-      <button class="first_one_button">
-        <a href="flightaware/index.html">Uçak Haritası</a>
-      </button>
+<body>
+
+  <div class="first_container">
+    <button class="first_one_button">
+      <a href="iss/index.html">Uluslararası Uzay İstasyonu Nerede?</a>
+    </button>
+    <!--
       <button class="first_two_button">
-        <a href="iss/index.html">ISS</a>
+        <a href="flightaware/index.html">Uçak Haritası</a>
       </button>
       <button class="first_three_button">
         <a href="global_warming/index.html">Küresel Isınma</a>
       </button>
-    </div>
+      -->
+  </div>
 
-    <hr />
+  <hr />
 
-    <div class="second_container">
-      <div id="map">
-        <!-- Javascript kodlarını çağır -->
-        <script src="script.js"></script>
-      </div>
+  <div class="second_container">
+    <div id="map">
+      <!-- Javascript kodlarını çağır -->
+      <script src="script.js"></script>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>

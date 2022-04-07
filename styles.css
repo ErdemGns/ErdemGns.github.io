@@ -30,3 +30,19 @@ body {
   height: auto;
   position: center;
 }
+
+
+.first_one_button {
+  background-color: red;
+  padding: 15px;
+}
+
+.first_two_button {
+  background-color: red;
+  padding: 15px;
+}
+
+.first_three_button {
+  background-color: red;
+  padding: 15px;
+}
