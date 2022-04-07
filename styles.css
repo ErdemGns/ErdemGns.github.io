@@ -4,7 +4,7 @@ body {
 
 .first_container {
   border: 3px solid red;
-  padding: 0.7%;
+  padding: 1%;
   background-color: blue;
   width: 75%;
   height: auto;
@@ -34,8 +34,16 @@ body {
 
 .first_one_button {
   background-color: red;
-  padding: 15px;
+  padding: 15px 11px;
+  line-height: 19px;
 }
+
+a:hover {
+  color: white;
+  background-color: black;
+}
+
+
 
 .first_two_button {
   background-color: red;

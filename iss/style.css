@@ -7,8 +7,18 @@
     color: yellow;
     width: 100%;
     height: auto;
-    background-color: black;
+    background-color: gray;
     border: 100%;
     border-color: black;
     margin: 0;
 }
+
+a:hover {
+    color: white;
+    background-color: black;
+}
+
+a {
+    padding: 9px 10px 11px;
+    line-height: 19px;
+  }
