@@ -38,6 +38,19 @@ body {
   line-height: 19px;
 }
 
+.first_two_button {
+  background-color: red;
+  padding: 15px 11px;
+  line-height: 19px;
+}
+
+.first_three_button {
+  background-color: red;
+  padding: 15px 11px;
+  line-height: 19px;
+}
+
+
 a:hover {
   color: white;
   background-color: black;
@@ -45,12 +58,4 @@ a:hover {
 
 
 
-.first_two_button {
-  background-color: red;
-  padding: 15px;
-}
 
-.first_three_button {
-  background-color: red;
-  padding: 15px;
-}
