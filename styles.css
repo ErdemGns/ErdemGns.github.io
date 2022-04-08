@@ -4,9 +4,9 @@ body {
 
 .first_container {
   border: 3px solid red;
-  padding: 1%;
+  padding: 19px;
   background-color: blue;
-  width: 75%;
+  width: auto;
   height: auto;
   margin-right: auto;
   margin-left: auto;

@@ -15,7 +15,7 @@
 
 li:hover {
   color: white;
-  background-color: black;
+  background-color: turquoise;
 }
 
 li {
@@ -30,13 +30,11 @@ h3 {
   text-align: center;
 }
 
-
 table, th, td {
   border: 3px solid;
   border-collapse: collapse;
   border-color: blue;
 }
-
 
 ul {
   list-style-type: none;
