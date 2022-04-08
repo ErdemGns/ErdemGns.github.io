@@ -4,6 +4,10 @@
   border: 5px solid green;
 }
 
+body {
+  margin: 0;
+}
+
 #up_part {
   color: yellow;
   padding: 15px;
