@@ -1,24 +1,45 @@
 #issMap {
   width: 65%;
   height: 700px;
+  border: 5px solid green;
 }
 
 #up_part {
   color: yellow;
-  width: 100%;
+  padding: 15px;
   height: auto;
   background-color: gray;
   border: 100%;
   padding-left: 20px;
 }
 
-a:hover {
+li:hover {
   color: white;
   background-color: black;
 }
 
-.home {
+li {
   background-color: yellow;
   padding: 15px 11px;
   line-height: 19px;
+  display: inline;
+}
+
+h3 {
+  display: inline;
+  text-align: center;
+}
+
+
+table, th, td {
+  border: 3px solid;
+  border-collapse: collapse;
+  border-color: blue;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
