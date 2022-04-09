@@ -15,12 +15,12 @@ ul {
   padding: 0;
 }
 
-li:hover {
+a:hover {
   color: white;
   background-color: turquoise;
 }
 
-li {
+ul a {
   background-color: yellow;
   padding: 15px 11px;
   line-height: 19px;
@@ -37,15 +37,36 @@ h2 {
   text-align: center;
 }
 
-table, th, td {
-  border: 3px solid;
+#e_b_h {
+  margin: 0px;
+}
+
+
+#e_b_h {
+  font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  border-color: blue;
+  width: 100%;
+}
+
+#e_b_h td, #e_b_h th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#e_b_h tr:nth-child(even){background-color: #dadada;}
+
+#e_b_h tr:hover {background-color: turquoise;}
+
+#e_b_h th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
 }
 
 
 #issMap {
-  width: 65%;
-  height: 700px;
+  width: 70%;
+  height: 600px;
   border: 5px solid green;
+  margin: 20px;
 }

@@ -17,7 +17,7 @@ const issIcon = L.icon({
 });
 
 const marker = L.marker([0, 0], {
-    icon: issIcon
+    icon: issIcon,
 }).addTo(mymap);
 
 
@@ -31,18 +31,21 @@ async function getISS() {
     const {
         latitude,
         longitude,
-        velocity
+        velocity,
+        altitude
     } = data;
 
     marker.setLatLng([latitude, longitude]);
     if (firstTime) {
-        mymap.setView([latitude, longitude], 2);
+        mymap.setView([latitude, longitude], 3);
         firstTime = false;
     }
     document.getElementById('lat').textContent = latitude.toFixed(4);
     document.getElementById('lon').textContent = longitude.toFixed(4);
     //Hız
     document.getElementById('vel').textContent = velocity.toFixed(4);
+    //Yüseklik
+    document.getElementById('alt').textContent = altitude.toFixed(3);
 }
 
 
