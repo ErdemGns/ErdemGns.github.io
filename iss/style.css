@@ -37,20 +37,22 @@ h2 {
   text-align: center;
 }
 
-#e_b_h {
-  margin: 0px;
+table {
+  float: right;
+  margin-top: 20px;
+  margin-right: 10%;
 }
-
 
 #e_b_h {
   font-family: Arial, Helvetica, sans-serif;
   border-collapse: collapse;
   width: 100%;
+  float: right;
 }
 
 #e_b_h td, #e_b_h th {
   border: 1px solid #ddd;
-  padding: 8px;
+  padding: 8px 10px;
 }
 
 #e_b_h tr:nth-child(even){background-color: #dadada;}
@@ -58,8 +60,8 @@ h2 {
 #e_b_h tr:hover {background-color: turquoise;}
 
 #e_b_h th {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 7%;
+  padding-bottom: 7%;
   text-align: left;
 }
 
