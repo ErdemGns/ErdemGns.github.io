@@ -6,8 +6,8 @@ const tiles = L.tileLayer(tileUrl, {
     attribution
 });
 tiles.addTo(map);
-const api_url = 'https://opensky-network.org/api/states/all?lamin=35.8389&lomin=25&lamax=45&lomax=45';
-
+const api_url = 'https://opensky-network.org/api/states/all';
+//tr: https://opensky-network.org/api/states/all?lamin=35.8389&lomin=25&lamax=45&lomax=45
 //////////////////////////////////////////
 
 function fetchData() {
@@ -47,6 +47,7 @@ function plotStates(map, markers) {
                 spi = state[15],
                 position_source = state[16];
 
+
             if (markers[icao24]) {
                 markers[icao24].setLatLng([lat, lng]);
             } else {
@@ -68,6 +69,7 @@ function plotStates(map, markers) {
         setTimeout(() => plotStates(map, markers), 5000);
     });
 }
+
 
 const markers = {};
 plotStates(map, markers);
