@@ -6,7 +6,7 @@ const tiles = L.tileLayer(tileUrl, {
     attribution
 });
 tiles.addTo(map);
-const api_url = 'https://opensky-network.org/api/states/all';
+const api_url = 'https://opensky-network.org/api/states/all?lamin=35.8389&lomin=25&lamax=45&lomax=45';
 //tr: https://opensky-network.org/api/states/all?lamin=35.8389&lomin=25&lamax=45&lomax=45
 //////////////////////////////////////////
 
