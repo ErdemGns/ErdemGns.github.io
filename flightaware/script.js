@@ -60,7 +60,7 @@ function plotStates(map, markers) {
                 markers[icao24] = L.marker([lat, lng], {
                     icon: airplaneIcon,
                     rotationAngle: true_track
-                }).bindPopup(`<p> Ülke: ${origin_country} <br> Enlem: ${lat} <br> Boylam: ${lng} <br> Barometrik Yükseklik: ${baro_altitude} m</p>`);
+                }).bindPopup(`<p> Ülke: ${origin_country} <br> Enlem: ${lat}° <br> Boylam: ${lng}° <br> Hız: ${velocity} m/s<br> Barometrik Yükseklik: ${baro_altitude} m</p>`);
 
                 markers[icao24].addTo(map);
 
