@@ -44,7 +44,7 @@ async function getISS() {
     document.getElementById('lon').textContent = longitude.toFixed(4);
     //Hız
     document.getElementById('vel').textContent = velocity.toFixed(4);
-    //Yüseklik
+    //Yükseklik
     document.getElementById('alt').textContent = altitude.toFixed(3);
 }
 
