@@ -1,5 +1,5 @@
 //Making a map and tiles
-const map = L.map('map').setView([40, 35], 6);
+const map = L.map('map').setView([40, 35], 5);
 const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributonrs';
 const tileUrl = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
 const tiles = L.tileLayer(tileUrl, {
